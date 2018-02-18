@@ -12,5 +12,9 @@ will be working on in the future.
 One difference is you'll see in the app we have edit and delete buttons
 that aren't in the designs.
 
+Don't worry about the "Morning Routine" checkbox in the design.
+
+That will most likely change in the future.
+
 We're keeping these, so try your best to make them fit with the rest of
 the design.
