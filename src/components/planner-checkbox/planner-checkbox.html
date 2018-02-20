@@ -1,13 +1,25 @@
-<ion-item no-lines>
-    <button ion-button icon-only clear item-end (click)="clickEdit()" *ngIf="buttons">
-        <ion-icon class="fa fa-pencil-square-o"></ion-icon>
-    </button>
-    <button ion-button icon-only clear item-end (click)="clickDelete()" *ngIf="buttons">
-        <ion-icon class="fa fa-trash-o"></ion-icon>
-    </button>
-    <ion-label>
-        <div class="title">{{ title }}</div>
-        <span class="subtitle" [ngStyle]="{ 'background-color': color }">{{ subtitle }}</span>
-    </ion-label>
-    <ion-checkbox [ngModel]="completed" (ngModelChange)="toggleCompleted($event)"></ion-checkbox>
-</ion-item>
+<div class="item" >
+
+    <div class="check">
+        <ion-checkbox class="" [ngModel]="completed" (ngModelChange)="toggleCompleted($event)"></ion-checkbox>
+    </div>
+
+    <div class="rigth-buttons">
+            <button ion-button icon-only clear item-end (click)="clickEdit()" *ngIf="buttons">
+                <ion-icon class="fa fa-pencil-square-o"></ion-icon>
+            </button>
+            <button ion-button icon-only clear item-end (click)="clickDelete()" *ngIf="buttons">
+                <ion-icon class="fa fa-trash-o"></ion-icon>
+            </button>
+        </div>
+
+    <div class="item-content">
+        <ion-label>
+            <div class="title">{{ title }}</div>
+            <span class="subtitle" [ngStyle]="{ 'background-color': color }">{{ subtitle }}</span>
+        </ion-label>
+    </div>
+
+    
+
+</div>
